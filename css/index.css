@@ -237,7 +237,8 @@ section1
     position: absolute;
     right: 0;
     top: 0;
-    background: #212121;
+    background: #212121 url("../images/me.jpg") no-repeat center center;
+    background-size: 200%;
 }
 #section1 .section1_inner .infor_box {
     width: 500px;
@@ -474,15 +475,17 @@ section3
     left: -650px;
     /* ------ */
     opacity: 0;
+    background-size: 600px;
 }
 #section3 .section3_inner .r_mockup_wrap::before {
     position: absolute;
     content: "";
     width: 172px;
-    height: 349px;
+    height: 392px;
     right: 0;
     top: 250px;
     background: url("../images/mg_mobile_mockup.png") no-repeat;
+    background-size: 172px;
 }
 #section3 .section3_inner .r_infor_wrap {
     width: 450px;
@@ -628,6 +631,12 @@ section4
 }
 #section4 .web_slide_box .web_slide8 {
     background-image: url("../images/pc_mockup_img/8_ybmcampus.png");
+}
+#section4 .web_slide_box .web_slide9 {
+    background-image: url("../images/pc_mockup_img/9_nongshimhotel.png");
+}
+#section4 .web_slide_box .web_slide10 {
+    background-image: url("../images/pc_mockup_img/10_momentum.png");
 }
 /* --------------------------------------------------------------------------------------------- */
 /* cover */
