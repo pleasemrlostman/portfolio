@@ -638,6 +638,12 @@ section4
 #section4 .web_slide_box .web_slide10 {
     background-image: url("../images/pc_mockup_img/10_momentum.png");
 }
+#section4 .web_slide_box .web_slide10 .link_box .view {
+    margin-right: 10px;
+}
+#section4 .web_slide_box .web_slide10 .link_box .github {
+    margin-left: 10px;
+}
 /* --------------------------------------------------------------------------------------------- */
 /* cover */
 /* --------------------------------------------------------------------------------------------- */
