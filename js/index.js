@@ -1,4 +1,8 @@
 $(function () {
+    var body = document.getElementById("body");
+    if (body.width >= 640) {
+    }
+
     $(window).scroll(function () {
         var num = $(document).scrollTop();
         console.log(num);
@@ -53,6 +57,7 @@ $(function () {
             $(".web_slide_box").animate({ top: "247.5px" }, 2000);
             $(".web_slide_box").addClass("on");
         }
+        var mobileBtnWrap = document.getElementById("m_btn_wrap");
 
         if (num >= 4500) {
             $(".mobile_mockup_wrap").addClass("on");

@@ -787,7 +787,7 @@ section5
 }
 #section5 .section5_inner {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #section5 .section5_inner .mobile_mockup_wrap {
     width: 600px;
