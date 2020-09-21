@@ -6,8 +6,9 @@ body {
 #main {
     width: 100%;
     height: 1000px;
-    background: url("../images/main_bg.jpg") no-repeat center -350px fixed;
+    background: url("../images/mainbg.jpg") no-repeat center center;
     background-size: cover;
+    /* background-size: 1920px; */
 }
 #main .main_inner {
     width: 1200px;
@@ -238,7 +239,7 @@ section1
     right: 0;
     top: 0;
     background: #212121 url("../images/me.jpg") no-repeat center center;
-    background-size: 200%;
+    background-size: 450px;
 }
 #section1 .section1_inner .infor_box {
     width: 500px;
@@ -609,39 +610,45 @@ section4
     background-size: 250px;
 }
 #section4 .web_slide_box .web_slide1 {
-    background-image: url("../images/pc_mockup_img/1_cannon.png");
+    background-image: url("../images/pc_mockup_img/moc_ybmcampus.png");
 }
 #section4 .web_slide_box .web_slide2 {
-    background-image: url("../images/pc_mockup_img/2_coffine.png");
+    background-image: url("../images/pc_mockup_img/moc_nongshimhotel.png");
 }
 #section4 .web_slide_box .web_slide3 {
-    background-image: url("../images/pc_mockup_img/3_daelim.png");
+    background-image: url("../images/pc_mockup_img/moc_coffine.png");
 }
 #section4 .web_slide_box .web_slide4 {
-    background-image: url("../images/pc_mockup_img/4_domino.png");
+    background-image: url("../images/pc_mockup_img/moc_mycat.png");
 }
 #section4 .web_slide_box .web_slide5 {
-    background-image: url("../images/pc_mockup_img/5_kyochon.png");
+    background-image: url("../images/pc_mockup_img/moc_daelim.png");
 }
 #section4 .web_slide_box .web_slide6 {
-    background-image: url("../images/pc_mockup_img/6_lesposac.png");
+    background-image: url("../images/pc_mockup_img/moc_samyang.png");
 }
 #section4 .web_slide_box .web_slide7 {
-    background-image: url("../images/pc_mockup_img/7_samyang.png");
+    background-image: url("../images/pc_mockup_img/moc_lesposac.png");
 }
 #section4 .web_slide_box .web_slide8 {
-    background-image: url("../images/pc_mockup_img/8_ybmcampus.png");
+    background-image: url("../images/pc_mockup_img/moc_cannon.png");
 }
 #section4 .web_slide_box .web_slide9 {
-    background-image: url("../images/pc_mockup_img/9_nongshimhotel.png");
+    background-image: url("../images/pc_mockup_img/moc_kyochon.png");
 }
 #section4 .web_slide_box .web_slide10 {
-    background-image: url("../images/pc_mockup_img/10_momentum.png");
+    background-image: url("../images/pc_mockup_img/moc_domino.png");
 }
-#section4 .web_slide_box .web_slide10 .link_box .view {
+#section4 .web_slide_box .web_slide11 {
+    background-image: url("../images/pc_mockup_img/moc_conects.png");
+}
+#section4 .web_slide_box .web_slide12 {
+    background-image: url("../images/pc_mockup_img/moc_momentum.png");
+}
+#section4 .web_slide_box .web_slide12 .link_box .view {
     margin-right: 10px;
 }
-#section4 .web_slide_box .web_slide10 .link_box .github {
+#section4 .web_slide_box .web_slide12 .link_box .github {
     margin-left: 10px;
 }
 /* --------------------------------------------------------------------------------------------- */
@@ -650,8 +657,9 @@ section4
 #section4 .web_slide_box .web_slide .cover {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
     height: 100%;
     text-align: center;
     color: #fefefe;
@@ -797,14 +805,14 @@ section5
     opacity: 0;
 }
 #section5 .section5_inner .mobile_mockup_wrap1 {
-    background-image: url("../images/m_mockup_img/lghello.png");
+    background-image: url("../images/m_mockup_img/coex.png");
 }
 #section5 .section5_inner .mobile_mockup_wrap2 {
     background-image: url("../images/m_mockup_img/subway.png");
     display: none;
 }
 #section5 .section5_inner .mobile_mockup_wrap3 {
-    background-image: url("../images/m_mockup_img/coex.png");
+    background-image: url("../images/m_mockup_img/lghello.png");
     display: none;
 }
 #section5 .section5_inner .mobile_infor_wrap {
@@ -936,7 +944,7 @@ section6
 ---------- */
 #section6 {
     height: 1000px;
-    background: url("../images/contact_bg.jpg") no-repeat center -400px fixed;
+    background: url("../images/contactbg.jpg") no-repeat center center;
     background-size: cover;
 }
 #section6 .section6_inner {
