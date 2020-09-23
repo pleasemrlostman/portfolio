@@ -1,6 +1,6 @@
 @media (min-width: 0) and (max-width: 639px) {
-    #body {
-        border: 5px solid red;
+    body{
+        overflow-x: hidden;
     }
     #main .main_inner {
         width: 100%;
@@ -159,8 +159,9 @@
         background-size: 100%;
     }
     #section3 .section3_inner .r_infor_wrap {
-        transform: translateX(50px);
+        transform: translateX(-50px);
         width: 100%;
+        left:-675px;
     }
     /* ----------
 section4
@@ -181,7 +182,23 @@ section4
     }
     #section4 .web_slide_box .slick-arrow {
         top: 125%;
+        opacity: 0;
     }
+    #section4 .web_slide_box .slick-arrow.on {
+        animation: arrowOpacity 2s ease;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes arrowOpacity {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+        
+    }
+
     #section4 .web_slide_box .slick-prev {
         left: 30%;
     }
@@ -206,8 +223,9 @@ section5
     #section5 .section5_inner .mobile_mockup_wrap {
         top: 1000px;
         width: 100%;
-        transform: translateX(50px);
+        transform: translateX(-50px);
         background-size: 100%;
+        left:-650px;
     }
     #section5 .section5_inner .mobile_infor_wrap {
         width: 100%;
@@ -215,6 +233,7 @@ section5
     }
     #section5 .section5_inner .mobile_btn_wrap {
         bottom: -200px;
+        opacity: 0;
     }
     #section5 .section5_inner .mobile_btn_wrap li {
         display: block;
