@@ -322,6 +322,7 @@ section1
 }
 #section1 .section1_inner .infor_box .introduction .edu_infor {
     font-size: 16px;
+    line-height: 24px;
 }
 /* ----------
 section2
@@ -676,20 +677,18 @@ section4
     margin-bottom: 30px;
 }
 #section4 .web_slide_box .web_slide .cover h2 {
-    font-size: 48px;
-    /* font-size: 52px; */
+    /* font-size: 48px; */
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 30px;
 }
 #section4 .web_slide_box .web_slide .cover h3 {
     font-size: 18px;
-    /* font-size: 22px; */
     font-weight: 700;
     margin-bottom: 30px;
 }
 #section4 .web_slide_box .web_slide .cover h4 {
     font-size: 18px;
-    /* font-size: 22px; */
     margin-bottom: 80px;
 }
 #section4 .web_slide_box .web_slide .cover .link_box {
@@ -944,15 +943,188 @@ section6
 ---------- */
 #section6 {
     height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+#section6 .section6_inner {
+    padding: 100px 0 0 0;
+    box-sizing: border-box;
+}
+
+#section6 .web_slide_box {
+    width: 1200px;
+    height: 625px;
+    margin: 0 auto;
+    position: absolute;
+    /* top: -725px; */
+    bottom: -725px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#section6 .web_slide_box.on {
+    animation: side_move 2s ease;
+    animation-fill-mode: forwards;
+}
+#section6 .web_slide_box .web_slide {
+    width: 450px;
+    height: 625px;
+    box-sizing: border-box;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 250px;
+}
+#section6 .web_slide_box .web_slide1 {
+    background-image: url("../images/pc_mockup_img/moc_momentum.png");
+}
+#section6 .web_slide_box .web_slide2 {
+    background-image: url("../images/pc_mockup_img/paintjs.png");
+}
+#section6 .web_slide_box .web_slide .link_box .view {
+    margin-right: 10px;
+}
+#section6 .web_slide_box .web_slide .link_box .github {
+    margin-left: 10px;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* cover */
+/* --------------------------------------------------------------------------------------------- */
+#section6 .web_slide_box .web_slide .cover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 100%;
+    text-align: center;
+    color: #fefefe;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 160px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#section6 .web_slide_box .web_slide .cover h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#section6 .web_slide_box .web_slide .cover h2 {
+    /* font-size: 48px; */
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#section6 .web_slide_box .web_slide .cover h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+#section6 .web_slide_box .web_slide .cover h4 {
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+#section6 .web_slide_box .web_slide .cover .link_box {
+}
+#section6 .web_slide_box .web_slide .cover .link_box a {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    border: 3px solid #fefefe;
+    color: #fefefe;
+}
+#section6 .web_slide_box .web_slide .cover .link_box a:hover {
+    background: #fefefe;
+    color: #212121;
+}
+#section6 .web_slide_box .web_slide .cover p {
+    font-size: 10px;
+    /* font-size: 14px; */
+    font-weight: 100;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 90px;
+}
+/* --------------------------------------------------------------------------------------------- */
+#section6 .web_slide_box .slick-slide {
+    width: 450px;
+    opacity: 0.4;
+    margin: 0 10px;
+    background-size: 450px;
+}
+#section6 .web_slide_box .slick-active {
+    opacity: 1;
+}
+#section6 .web_slide_box .slick-active .web_slide {
+    background-size: 450px;
+}
+#section6 .web_slide_box .slick-active:hover .cover {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+#section6 .web_slide_box .slick-arrow {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 77px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-indent: -99999px;
+}
+#section6 .web_slide_box .slick-prev {
+    left: -150px;
+    background: url("../images/prev_btn.png") no-repeat;
+}
+#section6 .web_slide_box .slick-next {
+    right: -150px;
+    background: url("../images/next_btn.png") no-repeat;
+}
+#section6 .web_slide_box .slick-dots {
+    text-align: center;
+    margin-top: 50px;
+}
+#section6 .web_slide_box .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+#section6 .web_slide_box .slick-dots li:first-child {
+    margin-left: 0;
+}
+#section6 .web_slide_box .slick-dots li:last-child {
+    margin-right: 0;
+}
+#section6 .web_slide_box .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    border: 4px solid #212121;
+    border-radius: 100%;
+    text-indent: -99999px;
+    transition: all 0.5s ease;
+    outline: none;
+    cursor: pointer;
+}
+#section6 .web_slide_box .slick-dots .slick-active button {
+    background: #212121;
+    transition: all 0.5s ease;
+}
+/* ----------
+section7
+---------- */
+#section7 {
+    height: 1200px;
     background: url("../images/contactbg.jpg") no-repeat center center;
     background-size: cover;
 }
-#section6 .section6_inner {
+#section7 .section7_inner {
 }
-#section6 .section6_inner h2 {
+#section7 .section7_inner h2 {
     color: #fefefe;
 }
-#section6 .section6_inner .contact_frame {
+#section7 .section7_inner .contact_frame {
     width: 900px;
     height: 500px;
     border: 8px solid #fefefe;
@@ -962,7 +1134,7 @@ section6
     position: relative;
     opacity: 0;
 }
-#section6 .section6_inner .contact_frame.on {
+#section7 .section7_inner .contact_frame.on {
     animation: contact 2s ease;
     animation-fill-mode: forwards;
 }
@@ -974,7 +1146,7 @@ section6
         opacity: 1;
     }
 }
-#section6 .section6_inner .contact_frame .contact {
+#section7 .section7_inner .contact_frame .contact {
     font-size: 34px;
     position: absolute;
     top: 50%;
@@ -982,7 +1154,7 @@ section6
     transform: translate(-50%, -50%);
     width: 100%;
 }
-#section6 .section6_inner .contact_frame .contact .phone {
+#section7 .section7_inner .contact_frame .contact .phone {
     margin-bottom: 30px;
 }
 /* ----------
