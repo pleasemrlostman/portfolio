@@ -309,6 +309,9 @@ section1
 #section1 .section1_inner .infor_box .infor_box_content .list4 span {
     font-size: 30px;
 }
+#section1 .section1_inner .infor_box .infor_box_content .list6 {
+    font-size: 24px;
+}
 #section1 .section1_inner .infor_box .infor_box_content .list7 {
     margin-bottom: 0;
 }
