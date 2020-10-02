@@ -310,7 +310,10 @@ section1
     font-size: 30px;
 }
 #section1 .section1_inner .infor_box .infor_box_content .list6 {
-    font-size: 24px;
+    font-size: 22px;
+}
+#section1 .section1_inner .infor_box .infor_box_content .list6 span {
+    font-size: 30px;
 }
 #section1 .section1_inner .infor_box .infor_box_content .list7 {
     margin-bottom: 0;
@@ -982,6 +985,15 @@ section6
 }
 #section6 .web_slide_box .web_slide2 {
     background-image: url("../images/pc_mockup_img/paintjs.png");
+}
+#section6 .web_slide_box .web_slide3 {
+    background-image: url("../images/pc_mockup_img/carousel.png");
+}
+#section6 .web_slide_box .web_slide4 {
+    background-image: url("../images/pc_mockup_img/lightbox.png");
+}
+#section6 .web_slide_box .web_slide5 {
+    background-image: url("../images/pc_mockup_img/calendar.png");
 }
 #section6 .web_slide_box .web_slide .link_box .view {
     margin-right: 10px;

@@ -73,7 +73,7 @@ $(function () {
             console.log(num);
 
             // -----------------------------------------
-            if (num >= 1 && num < 5999) {
+            if (num >= 1 && num < 10000) {
                 $(".header").css({ background: "#212121" });
             } else {
                 $(".header").css({ background: "transparent" });
