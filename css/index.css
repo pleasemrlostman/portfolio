@@ -2,6 +2,7 @@
 body {
     font-family: "Noto Sans KR", sans-serif;
     background: #eeeeee;
+    overflow-x: hidden;
 }
 #main {
     width: 100%;
